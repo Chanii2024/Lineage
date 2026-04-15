@@ -4,7 +4,7 @@ import NutritionVisuals from './NutritionVisuals';
 const MealCard = ({ meal, onSwap, onToggleLock, featured = false, isAccessible = false, isDeficient = false }) => {
     return (
         <article
-            className={`meal-card glass rounded-[2.5rem] transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] group/card flex flex-col justify-between h-full bg-white/5 overflow-hidden border-white/10 ${meal.isLocked ? 'border-accent/40 shadow-[0_0_40px_-10px_rgba(139,168,136,0.2)]' : ''} ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
+            className={`meal-card glass rounded-[2.5rem] transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] group/card flex flex-col justify-between h-full bg-white/5 border-white/10 ${meal.isLocked ? 'border-accent/40 shadow-[0_0_40px_-10px_rgba(139,168,136,0.2)]' : ''} ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
         >
             {/* Visual Header */}
             <div className={`relative overflow-hidden ${isAccessible ? 'h-1/3' : 'h-1/2'} ${featured ? 'md:h-[60%]' : ''}`}>
@@ -34,7 +34,7 @@ const MealCard = ({ meal, onSwap, onToggleLock, featured = false, isAccessible =
                 </div>
             </div>
 
-            <div className={`p-8 pt-10 space-y-6 flex-grow flex flex-col justify-between ${isAccessible ? 'bg-[#1F1F1F]' : 'pt-0 -mt-8 relative z-10'}`}>
+            <div className={`p-8 pt-10 space-y-6 flex-grow flex flex-col justify-between ${isAccessible ? 'bg-[#1F1F1F] rounded-b-[2.5rem]' : 'pt-0 -mt-8 relative z-10'}`}>
                 <div className="space-y-4">
                     <div className="flex justify-between items-start gap-4">
                         <div className="space-y-2">
