@@ -4,10 +4,10 @@ import NutritionVisuals from './NutritionVisuals';
 const MealCard = ({ meal, onSwap, onToggleLock, featured = false, isAccessible = false, isDeficient = false }) => {
     return (
         <article
-            className={`meal-card glass rounded-[2.5rem] transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] group/card flex flex-col justify-between h-full bg-white/5 border-white/10 ${meal.isLocked ? 'border-accent/40 shadow-[0_0_40px_-10px_rgba(139,168,136,0.2)]' : ''} ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
+            className={`meal-card glass rounded-[2.5rem] transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] group/card flex flex-col justify-between h-full bg-white/5 border border-white/10 ${meal.isLocked ? 'border-accent/40 shadow-[0_0_40px_-10px_rgba(139,168,136,0.2)]' : ''} ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
         >
             {/* Visual Header */}
-            <div className={`relative overflow-hidden ${isAccessible ? 'h-1/3' : 'h-1/2'} ${featured ? 'md:h-[60%]' : ''}`}>
+            <div className={`relative overflow-hidden rounded-t-[2.5rem] ${isAccessible ? 'h-1/3' : 'h-1/2'} ${featured ? 'md:h-[60%]' : ''}`}>
                 <img
                     src={meal.image}
                     alt={meal.name}
