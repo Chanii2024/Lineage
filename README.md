@@ -1,0 +1,58 @@
+# Lineage: Heritage Edition
+
+An advanced culinary intelligence platform designed to manage the vitality and logistical precision of the household. **Lineage** transforms meal planning into an automated, records-based operational experience.
+
+## ✨ Core Intelligence
+
+- **Priority AI Rotation**: Automatically calculates "Decay Scores" for your meal history. Dishes you haven't prepared recently are surfaced as high-priority recommendations.
+- **Editorial Discovery**: A staggered, high-end grid layout powered by GSAP for a premium "Executive Tool" feel.
+- **Real-Time Synergy**: Deep integration with Firebase Realtime Database ensures every swap, ingredient modification, and "Lock" is synced across all devices instantly.
+
+## 🛠 Features
+
+### 👨‍🍳 Servant Mode (Operational Console)
+- **Hands-Free Protocol**: Integrated Web Speech API allows the preparer to command the checklist via voice ("Next Step", "Mark Done").
+- **Precision Checklist**: A simplified, single-column prep list designed for high-heat kitchen environments.
+- **Microphone Integration**: Real-time visual feedback on voice activation state.
+
+### 📱 Logistic Extensions
+- **WhatsApp Grocery Exporter**: One-tap consolidation of ingredients for the next 3 days of "Locked" or Priority records, sent directly to your phone.
+- **Leftover Tracking**: Intellectual prompt system that generates "Quick Lunch" badges on the dashboard when leftovers are confirmed.
+- **Mood Context**: Fast filtering protocols for **Light**, **Hearty**, and **Quick Prep** discovery.
+
+### 📊 Vitality Analytics
+- **Family Radar**: Real-time Recharts-powered visualization of nutritional balance.
+- **Nutritional Nudges**: Body-needs icons pulse in **Rose (#EBB3B2)** when a specific food category has been ignored for too long.
+
+### ♿ Accessibility (Reading Mode)
+- **Professional Tool Aesthetic**: Toggle into a secondary UI mode inspired by professional delivery tools—optimized for readability, high contrast, and utility.
+
+## 🚀 Tech Stack
+
+- **Framework**: React 19 (Vite)
+- **Styling**: Tailwind CSS 4.0
+- **Animation**: GSAP (GreenSock Animation Platform)
+- **Intelligence**: Firebase Realtime Database & Web Speech API
+- **Visualization**: Recharts
+
+## 📦 Setup & Deployment
+
+1. **Clone & Install**:
+   ```bash
+   npm install
+   ```
+2. **Environment**:
+   - Create a Firebase project and add your credentials to `/src/firebase.js`.
+3. **Development**:
+   ```bash
+   npm run dev
+   ```
+4. **Deploy**:
+   ```bash
+   npm run build
+   firebase deploy
+   ```
+
+---
+*Maintained by the Lineage Custodian. Precision is required.*
+
