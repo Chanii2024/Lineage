@@ -7,13 +7,13 @@ const NutritionIcon = ({ trait, label, nutrition, isDeficient, isAccessible }) =
     const Icon = { fiber: Leaf, minerals: Droplets, protein: Zap, fats: CircleDot }[trait];
 
     return (
-        <div className={`nutrition-icon relative group flex items-center justify-center ${isDeficient ? 'text-[#EBB3B2]' : (isAccessible ? 'text-white/40' : 'text-text-main/20')
+        <div className={`nutrition-icon relative group/nutrition flex items-center justify-center ${isDeficient ? 'text-[#EBB3B2]' : (isAccessible ? 'text-white/40' : 'text-text-main/20')
             }`}>
             <Icon className={isAccessible ? "w-7 h-7" : "w-5 h-5"} />
-            <span className={`absolute -top-12 left-0 scale-0 group-hover:scale-100 transition-all duration-300 bg-text-main text-white rounded-xl uppercase tracking-[0.2em] font-black shadow-2xl z-[50] pointer-events-none whitespace-nowrap ${isAccessible ? 'text-sm px-5 py-2.5' : 'text-[10px] px-4 py-2'
+            <span className={`absolute -top-12 left-1/2 -translate-x-1/2 scale-0 group-hover/nutrition:scale-100 transition-all duration-300 bg-text-main text-white rounded-xl uppercase tracking-[0.2em] font-black shadow-2xl z-[50] pointer-events-none whitespace-nowrap ${isAccessible ? 'text-sm px-5 py-2.5' : 'text-[10px] px-4 py-2'
                 }`}>
                 {label}
-                <div className="absolute bottom-[-4px] left-4 w-2 h-2 bg-text-main rotate-45" />
+                <div className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-2 h-2 bg-text-main rotate-45" />
             </span>
         </div>
     );

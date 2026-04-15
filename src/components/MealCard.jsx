@@ -4,14 +4,14 @@ import NutritionVisuals from './NutritionVisuals';
 const MealCard = ({ meal, onSwap, onToggleLock, featured = false, isAccessible = false, isDeficient = false }) => {
     return (
         <article
-            className={`meal-card glass rounded-[2.5rem] transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] group flex flex-col justify-between h-full bg-white/5 overflow-hidden border-white/10 ${meal.isLocked ? 'border-accent/40 shadow-[0_0_40px_-10px_rgba(139,168,136,0.2)]' : ''} ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
+            className={`meal-card glass rounded-[2.5rem] transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] group/card flex flex-col justify-between h-full bg-white/5 overflow-hidden border-white/10 ${meal.isLocked ? 'border-accent/40 shadow-[0_0_40px_-10px_rgba(139,168,136,0.2)]' : ''} ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
         >
             {/* Visual Header */}
             <div className={`relative overflow-hidden ${isAccessible ? 'h-1/3' : 'h-1/2'} ${featured ? 'md:h-[60%]' : ''}`}>
                 <img
                     src={meal.image}
                     alt={meal.name}
-                    className={`w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 ${meal.isLocked || isAccessible ? 'opacity-100' : 'opacity-90'}`}
+                    className={`w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover/card:scale-110 ${meal.isLocked || isAccessible ? 'opacity-100' : 'opacity-90'}`}
                 />
                 {!isAccessible && <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />}
 
@@ -39,7 +39,7 @@ const MealCard = ({ meal, onSwap, onToggleLock, featured = false, isAccessible =
                     <div className="flex justify-between items-start gap-4">
                         <div className="space-y-2">
                             <NutritionVisuals nutrition={meal.nutrition} isDeficient={isDeficient} isAccessible={isAccessible} />
-                            <h3 className={`${isAccessible ? 'text-4xl font-sans font-bold text-white' : 'text-3xl font-serif italic text-text-main'} leading-tight group-hover:text-accent transition-colors duration-500`}>
+                            <h3 className={`${isAccessible ? 'text-4xl font-sans font-bold text-white' : 'text-3xl font-serif italic text-text-main'} leading-tight group-hover/card:text-accent transition-colors duration-500`}>
                                 {meal.name}
                             </h3>
                         </div>
