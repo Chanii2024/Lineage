@@ -2,6 +2,18 @@
 
 An advanced culinary intelligence platform designed to manage the vitality and logistical precision of the household. Lineage transforms meal planning into an automated, records-based operational experience.
 
+## System Interfaces
+
+![Dashboard Preview](public/Screenshot%202026-04-15%20182330.png)
+![Meal Discovery](public/Screenshot%202026-04-15%20182335.png)
+![Family Analytics](public/Screenshot%202026-04-15%20182405.png)
+![Servant Mode Protocol](public/Screenshot%202026-04-15%20182410.png)
+![Nutrition Oversight](public/Screenshot%202026-04-15%20182420.png)
+![System Controls](public/Screenshot%202026-04-15%20182444.png)
+![Operational Logs](public/Screenshot%202026-04-15%20182453.png)
+![Vitality Metrics](public/Screenshot%202026-04-15%20182501.png)
+![Mobile Synchronization](public/Screenshot%202026-04-15%20182518.png)
+
 ## Core Intelligence
 
 - **Priority AI Rotation**: Automatically calculates Decay Scores for your meal history. Dishes you haven't prepared recently are surfaced as high-priority recommendations.
