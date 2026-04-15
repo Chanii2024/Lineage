@@ -4,13 +4,12 @@ import { getDatabase } from "firebase/database";
 // Firebase configuration placeholders
 // IMPORTANT: Please replace these with your actual Firebase project settings.
 const firebaseConfig = {
-    apiKey: "AIzaSyAQI8LnuX7WDpydFhxLvByom-vAVO0DPts",
-    authDomain: "lineage-app-host.firebaseapp.com",
-    projectId: "lineage-app-host",
-    storageBucket: "lineage-app-host.firebasestorage.app",
-    messagingSenderId: "1006601237349",
-    appId: "1:1006601237349:web:bdef9b3fef6b754da8e78c",
-    databaseURL: "https://lineage-app-host-default-rtdb.asia-southeast1.firebasedatabase.app"
+    apiKey: "AIzaSyBSqETiukoiwa6CLg2D0AiTXR78MCsV6uk",
+    authDomain: "lineage-family.firebaseapp.com",
+    projectId: "lineage-family",
+    storageBucket: "lineage-family.firebasestorage.app",
+    messagingSenderId: "83404397233",
+    appId: "1:83404397233:web:ab26e4c94bfda03b79a090"
 };
 
 let database;
