@@ -3,11 +3,16 @@ import { useState, useEffect, useMemo } from "react";
 import { database } from "../firebase";
 import { ref, onValue, update } from "firebase/database";
 
+import imgVegan from "../assets/cuisine-vegan-vegetarian.jpg";
+import imgSeafood from "../assets/cuisine-seafood.jpg";
+import imgItalian from "../assets/cuisine-italian.jpg";
+import imgSignature from "../assets/cuisine-signature-dishes.jpg";
+
 const MOCK_MEALS = [
     {
         id: "1",
         name: "Slow-Roasted Heirloom Carrots",
-        image: "/src/assets/cuisine-vegan-vegetarian.jpg",
+        image: imgVegan,
         ingredients: ["Heirloom Carrots", "Wild Thyme", "Whipped Feta", "Pistachio Crumbles"],
         last_made: Date.now() - (1000 * 60 * 60 * 24 * 5),
         category: "Botanical",
@@ -20,7 +25,7 @@ const MOCK_MEALS = [
     {
         id: "2",
         name: "Wild-Caught Seabass in Parchment",
-        image: "/src/assets/cuisine-seafood.jpg",
+        image: imgSeafood,
         ingredients: ["Seabass", "Meyer Lemon", "Samphire", "Dill Emulsion"],
         last_made: Date.now() - (1000 * 60 * 60 * 24 * 12),
         category: "Marine",
@@ -33,7 +38,7 @@ const MOCK_MEALS = [
     {
         id: "3",
         name: "Antique Grain Risotto",
-        image: "/src/assets/cuisine-italian.jpg",
+        image: imgItalian,
         ingredients: ["Farro", "Porcini Mushrooms", "Black Truffle Oil", "24-Month Sfoglia"],
         last_made: Date.now() - (1000 * 60 * 60 * 24 * 2),
         category: "Earth",
@@ -46,7 +51,7 @@ const MOCK_MEALS = [
     {
         id: "4",
         name: "Braised Short Rib 'Heritage'",
-        image: "/src/assets/cuisine-signature-dishes.jpg",
+        image: imgSignature,
         ingredients: ["Beef Short Rib", "Red Wine Reduction", "Parsnip Purée", "Bone Marrow"],
         last_made: Date.now() - (1000 * 60 * 60 * 24 * 20),
         category: "Estate",
@@ -59,7 +64,7 @@ const MOCK_MEALS = [
     {
         id: "5",
         name: "Sparkling Lavender Nectar",
-        image: "/src/assets/cuisine-vegan-vegetarian.jpg",
+        image: imgVegan,
         ingredients: ["Lavender Essence", "Raw Honey", "Carbonated Spring Water"],
         category: "Botanical",
         type: "Drink",
@@ -69,7 +74,7 @@ const MOCK_MEALS = [
     {
         id: "6",
         name: "Bone Marrow Toast",
-        image: "/src/assets/cuisine-signature-dishes.jpg",
+        image: imgSignature,
         ingredients: ["Sourdough", "Roasted Marrow", "Parsley Salad"],
         category: "Estate",
         type: "Add-on",
